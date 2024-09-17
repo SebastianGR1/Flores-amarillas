@@ -10,12 +10,12 @@
             padding: 0;
             height: 100vh;
             background: #000; /* Fondo negro */
-            overflow: hidden;
             font-family: 'Arial', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            overflow: auto; /* Permitir desplazamiento vertical */
         }
         .stars {
             position: absolute;
@@ -32,8 +32,11 @@
             position: relative;
             text-align: center;
             z-index: 2;
+            width: 100%;
             max-width: 80%;
-            max-height: 80%;
+            margin: 0 auto;
+            padding: 20px; /* Añadido padding para mejor visualización */
+            box-sizing: border-box; /* Incluye padding en el cálculo del tamaño del contenedor */
         }
         .neon-text {
             font-size: 1.5rem; /* Tamaño de fuente reducido */
@@ -87,6 +90,15 @@
             background-color: #fff; /* Fondo blanco en hover */
             color: #000; /* Color negro en hover */
             transform: scale(1.05); /* Efecto de aumento al pasar el cursor */
+        }
+        /* Ocultar la barra de desplazamiento pero permitir desplazamiento */
+        body::-webkit-scrollbar {
+            width: 0; /* Ancho de la barra de desplazamiento */
+            background: transparent; /* Fondo de la barra de desplazamiento */
+        }
+        body {
+            -ms-overflow-style: none;  /* IE y Edge */
+            scrollbar-width: none;  /* Firefox */
         }
     </style>
 </head>
