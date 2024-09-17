@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto Neón</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #000; /* Fondo negro */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+        }
+        .neon-text {
+            font-size: 4rem;
+            color: #0ff; /* Color de texto */
+            text-shadow: 
+                0 0 5px #0ff, 
+                0 0 10px #0ff, 
+                0 0 15px #0ff, 
+                0 0 20px #f0f, 
+                0 0 30px #f0f, 
+                0 0 40px #f0f, 
+                0 0 50px #f0f;
+            animation: neon-blink 1.5s ease-in-out infinite alternate;
+        }
+        @keyframes neon-blink {
+            from {
+                text-shadow: 
+                    0 0 5px #0ff, 
+                    0 0 10px #0ff, 
+                    0 0 15px #0ff, 
+                    0 0 20px #f0f, 
+                    0 0 30px #f0f, 
+                    0 0 40px #f0f, 
+                    0 0 50px #f0f;
+                opacity: 1;
+            }
+            to {
+                text-shadow: 
+                    0 0 10px #0ff, 
+                    0 0 20px #0ff, 
+                    0 0 30px #0ff, 
+                    0 0 40px #f0f, 
+                    0 0 60px #f0f, 
+                    0 0 80px #f0f, 
+                    0 0 100px #f0f;
+                opacity: 0.8;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="neon-text">Texto Neón</div>
+</body>
+</html>

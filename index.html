@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto Neón sobre Cielo Estrellado - Página 2</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: #000; /* Fondo negro */
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png');
+            background-size: cover;
+            z-index: 1;
+            animation: twinkle 1.5s infinite;
+        }
+        .neon-container {
+            position: relative;
+            text-align: center;
+            z-index: 2;
+            max-width: 80%;
+            max-height: 80%;
+        }
+        .neon-text {
+            font-size: 1.5rem; /* Tamaño de fuente reducido */
+            color: #fff; /* Color blanco para el texto */
+            text-shadow: 
+                0 0 5px #fff, 
+                0 0 10px #fff, 
+                0 0 15px #fff, 
+                0 0 20px #fff;
+            animation: neon-blink 3s ease-in-out infinite alternate; /* Ajustado para un parpadeo más suave */
+            margin: 20px 0; /* Separación vertical entre bloques de texto */
+            line-height: 1.5; /* Mejora la legibilidad */
+        }
+        @keyframes neon-blink {
+            from {
+                text-shadow: 
+                    0 0 5px #fff, 
+                    0 0 10px #fff, 
+                    0 0 15px #fff, 
+                    0 0 20px #fff;
+                opacity: 1;
+            }
+            to {
+                text-shadow: 
+                    0 0 10px #fff, 
+                    0 0 15px #fff, 
+                    0 0 20px #fff, 
+                    0 0 25px #fff;
+                opacity: 0.8; /* Reducido para un efecto más sutil */
+            }
+        }
+        @keyframes twinkle {
+            0% { opacity: 0.8; }
+            50% { opacity: 1; }
+            100% { opacity: 0.8; }
+        }
+        .button {
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: 2px solid #fff; /* Borde blanco */
+            background-color: transparent; /* Fondo transparente */
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            text-transform: uppercase;
+            text-shadow: 0 0 5px #fff;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+        }
+        .button:hover {
+            background-color: #fff; /* Fondo blanco en hover */
+            color: #000; /* Color negro en hover */
+            transform: scale(1.05); /* Efecto de aumento al pasar el cursor */
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="neon-container">
+        <div class="neon-text">
+            Allison te amo muchísimo, cada momento que paso contigo es un respiro de esta pta mierda de vida que me cargo y quiero pasar cada momento de mi vida a tu lado.
+        </div>
+        <div class="neon-text">
+            Quiero verte a la cara y decirte que en verdad te amo, adoro y pero sobre todo que quiero que seas mi novia :>
+        </div>
+        <div class="neon-text">
+            Porque en verdad siento mucha atracción amorosa por ti, porque más que una amiga te veo como alguien en quien confiar, mi alma femenina y esquizofrénica, pero sigo considerándote una muy buena compañera de locuras.
+        </div>
+        <div class="neon-text">
+            PPRQUE EN VERDAD TE AMO DEMASIADO ALLISON, ERES DE MIS MAYORES RAZONES PARA USAR WSP, LEVANTARME E INCLUSO PODRÍA DECIR QUE ERES MI RAZÓN DE VIVIR
+        </div>
+        <div class="neon-text">
+            Y te doy esto como regalo y prueba de mi amor
+        </div>
+        <a href="./flor.html" class="button">Ver Más</a>
+    </div>
+</body>
+</html>
